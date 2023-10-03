@@ -16,7 +16,11 @@
 <div id = "servicesMenu">
     <h1>Menu of Available Services</h1>
     <h3>Facial Treatments</h3>
-    <p>The facial treatments below are recommended by our etheticians for your given skin type.</p>
+
+    <div>
+        <p>The facial treatments below are recommended by our etheticians for your given skin type.</p>
+    </div>
+
     <table>
         <tr th:each="facialOptions : ${appropriateFacials}">
             <td th:text="${facialOptions}"></td>
@@ -31,8 +35,19 @@
         <h3>Pedicure</h3>
         <p th:replace="~{fragments :: pedicureDescription}"></p>
     </div>
+    <div th:if="${manipedi.equals('both')}">
+        <h3>Manicure and Pedicure</h3>
+        <p th:replace="~{fragments :: manicureDescription}"></p>
+        <h4>AND</h4>
+        <p th:replace="~{fragments :: pedicureDescription}"></p>
+    </div>
 
-
+    <footer>
+        <div class="polish-colors-container red"></div>
+        <div class="polish-colors-container blue"></div>
+        <div class="polish-colors-container yellow"></div>
+    </footer>
 </div>
+
 </body>
 </html>

@@ -12,15 +12,43 @@ div {
 
 h1 {
     margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+h3 {
+    margin: 10px auto;
 }
 
 table {
     margin: auto;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.polish-colors-container {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 2px 5px;
+}
+
+.red{
+background-color: #833F3B;
+}
+
+.blue {
+    background-color: #596e7f;
+}
+
+.yellow{
+    background-color: #f0c864;
 }
