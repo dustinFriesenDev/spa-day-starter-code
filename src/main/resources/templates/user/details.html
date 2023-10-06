@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <h1 th:text="'Welcome ' + ${username}">Whaddup</h1>
+    <table>
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td th:text="${username}"></td>
+            <td th:text="${email}"></td>
+        </tr>
+    </table>
+    <a th:href="@{/}">Select Services</a>
+</body>
+</html>
